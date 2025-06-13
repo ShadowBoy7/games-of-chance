@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coin Flip, Dice Roll & Word Picker App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4925538116818220"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="tabs">
-        <button class="tab-link active" onclick="openTab(event, 'coin-flip')">Coin Flip</button>
-        <button class="tab-link" onclick="openTab(event, 'dice-roll')">Dice Roll</button>
-        <button class="tab-link" onclick="openTab(event, 'word-picker')">Word Picker</button>
+      <button class="tab-link active" onclick="openTab(event, 'coin-flip')">
+        Coin Flip
+      </button>
+      <button class="tab-link" onclick="openTab(event, 'dice-roll')">
+        Dice Roll
+      </button>
+      <button class="tab-link" onclick="openTab(event, 'word-picker')">
+        Word Picker
+      </button>
     </div>
 
-    <div id="coin-flip" class="tab-content" style="display:block;">
-        <div class="container">
-            <h1>Coin Flip</h1>
-            <div class="coin" id="coin">
-                <div class="heads"></div>
-                <div class="tails"></div>
-            </div>
-            <button id="flip-button">Flip Coin</button>
-            <p id="result">Click the button to flip!</p>
+    <div id="coin-flip" class="tab-content" style="display: block">
+      <div class="container">
+        <h1>Coin Flip</h1>
+        <div class="coin" id="coin">
+          <div class="heads"></div>
+          <div class="tails"></div>
         </div>
+        <button id="flip-button">Flip Coin</button>
+        <p id="result">Click the button to flip!</p>
+      </div>
     </div>
 
-    <div id="dice-roll" class="tab-content" style="display:none;">
-        <div class="container">
-            <h1>Dice Roll</h1>
-            <div class="dice-area">
-                <div class="dice" id="dice1">1</div>
-                <div class="dice" id="dice2">1</div>
-            </div>
-            <button id="roll-button">Roll Dice</button>
-            <p id="dice-result">Click the button to roll!</p>
+    <div id="dice-roll" class="tab-content" style="display: none">
+      <div class="container">
+        <h1>Dice Roll</h1>
+        <div class="dice-area">
+          <div class="dice" id="dice1">1</div>
+          <div class="dice" id="dice2">1</div>
         </div>
+        <button id="roll-button">Roll Dice</button>
+        <p id="dice-result">Click the button to roll!</p>
+      </div>
     </div>
 
-    <div id="word-picker" class="tab-content" style="display:none;">
-        <div class="container">
-            <h1>Random Word Picker</h1>
-            <div class="word-picker-area">
-                <p>Enter words or phrases, one per line:</p>
-                <textarea id="word-list-input" rows="10" placeholder="Apple
+    <div id="word-picker" class="tab-content" style="display: none">
+      <div class="container">
+        <h1>Random Word Picker</h1>
+        <div class="word-picker-area">
+          <p>Enter words or phrases, one per line:</p>
+          <textarea
+            id="word-list-input"
+            rows="10"
+            placeholder="Apple
 Banana
 Cherry Pie
-A long phrase"></textarea>
-                <button id="pick-word-button">Pick Random Word</button>
-                <button id="reset-list-button">Reset List</button>
-            </div>
-            <div class="picked-word-container">
-                <h2>Picked Word:</h2>
-                <p id="picked-word-result">---</p>
-            </div>
+A long phrase"
+          ></textarea>
+          <button id="pick-word-button">Pick Random Word</button>
+          <button id="reset-list-button">Reset List</button>
         </div>
+        <div class="picked-word-container">
+          <h2>Picked Word:</h2>
+          <p id="picked-word-result">---</p>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
